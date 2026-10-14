@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Space Technology & Telescopes Exhibit</title>
+<style>
+:root{--bg:#f4f6fb;--surface:#fff;--text:#14182b;--muted:#566080;--accent:#d9480f;--accent2:#1c64f2;--line:#d8deee;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#070b1a;--surface:#111936;--text:#eef1ff;--muted:#9aa5cf;--accent:#ffb454;--accent2:#6ea8ff;--line:#26305a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#070b1a;--surface:#111936;--text:#eef1ff;--muted:#9aa5cf;--accent:#ffb454;--accent2:#6ea8ff;--line:#26305a;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header.hero{padding:64px 0 40px;text-align:center;background:radial-gradient(circle at 20% 30%,rgba(110,168,255,.18),transparent 40%),radial-gradient(circle at 80% 10%,rgba(255,180,84,.15),transparent 35%)}
+.eyebrow{letter-spacing:.2em;text-transform:uppercase;font-size:.75rem;color:var(--accent);font-weight:700}
+h1{font-size:clamp(2rem,6vw,3.4rem);line-height:1.1;margin:.4em 0}
+.lead{color:var(--muted);max-width:620px;margin:0 auto}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:8px;overflow-x:auto;padding:10px 20px}
+nav a{white-space:nowrap;text-decoration:none;color:var(--text);border:1px solid var(--line);border-radius:99px;padding:6px 14px;font-size:.9rem}
+nav a:hover{border-color:var(--accent)}
+section{padding:44px 0 8px}
+h2{font-size:1.6rem;margin:0 0 4px}
+.sub{color:var(--muted);margin:0 0 20px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h3{margin:.2em 0 .1em;font-size:1.25rem}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent2)}
+.flag{color:var(--accent)}
+.stats{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.stats span{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:3px 10px;font-size:.8rem}
+.card p{margin:.5em 0;color:var(--muted);font-size:.95rem}
+.card ul{margin:.5em 0 0;padding-left:1.1em;color:var(--muted);font-size:.92rem}
+.fact{margin-top:14px;padding:10px 12px;border-left:3px solid var(--accent);background:var(--bg);font-size:.88rem;border-radius:0 8px 8px 0}
+.timeline{display:flex;gap:0;overflow-x:auto;border-top:2px solid var(--line);margin-top:8px}
+.timeline div{min-width:130px;flex:1;padding:14px 10px 0;position:relative;font-size:.85rem}
+.timeline div::before{content:"";position:absolute;top:-7px;left:10px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.timeline b{display:block;color:var(--accent)}
+.qr{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:center;text-align:left}
+#qrbox{background:#fff;padding:14px;border-radius:12px;min-width:200px;min-height:200px;display:flex;align-items:center;justify-content:center;color:#333;font-size:.8rem}
+button{font:inherit;background:var(--accent);color:#111;border:0;border-radius:8px;padding:8px 16px;cursor:pointer;font-weight:600}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:40px 0 48px}
+.art{width:100%;height:auto;border-radius:10px;display:block;margin:0 0 12px}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.links a{font-size:.82rem;text-decoration:none;color:var(--accent2);border:1px solid var(--line);border-radius:99px;padding:4px 12px}
+.links a:hover{border-color:var(--accent2)}
+.note{background:var(--surface);border:1px dashed var(--line);border-radius:10px;padding:10px 14px;font-size:.88rem;color:var(--muted);margin:16px 0 0}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="stars" fill="#fff"><circle cx="20" cy="15" r="1"/><circle cx="70" cy="90" r="1.2"/><circle cx="120" cy="20" r=".8"/><circle cx="210" cy="12" r="1"/><circle cx="260" cy="40" r="1.2"/><circle cx="280" cy="95" r=".8"/><circle cx="40" cy="60" r=".8"/><circle cx="185" cy="98" r="1"/></g><polygon id="hx" points="14,0 7,12.1 -7,12.1 -14,0 -7,-12.1 7,-12.1"/><g id="sat"><rect x="-20" y="-14" width="40" height="28" rx="3" fill="#c9d1e8"/><rect x="-72" y="-8" width="44" height="16" fill="#2b57c7" stroke="#8fb4ff"/><rect x="28" y="-8" width="44" height="16" fill="#2b57c7" stroke="#8fb4ff"/><circle cx="0" cy="0" r="6" fill="#111" stroke="#ffb454" stroke-width="2"/></g></defs></svg>
+<header class="hero"><div class="wrap">
+<div class="eyebrow">Small Exhibit</div>
+<h1>Space Technology &amp; Space Telescopes</h1>
+<p class="lead">From Filipino microsatellites to Japan's asteroid explorers and the great observatories that look back at the dawn of the universe.</p>
+</div></header>
+
+<nav><div class="wrap">
+<a href="#ph">Philippines</a><a href="#jp">Japan</a><a href="#scope">Telescopes</a><a href="#tech">Technology</a><a href="#time">Timeline</a><a href="#qr">QR Code</a>
+</div></nav>
+
+<main class="wrap">
+
+<section id="ph">
+<h2><span class="flag">●</span> Philippine Microsatellites</h2>
+<p class="sub">Built through the PHL-Microsat program by DOST, UP Diliman and Japanese partners Tohoku and Hokkaido Universities.</p><p class="note">Pictures on this page are original illustrations. Use the links on each card to open real photos and videos from the agencies and news sources.</p>
+<div class="grid">
+<div class="card">
+<svg class="art" viewBox="0 0 300 110" role="img" aria-label="Illustration of Diwata-1 orbiting Earth"><rect width="300" height="110" fill="#0b1230"/><use href="#stars"/><circle cx="150" cy="200" r="130" fill="#1c64f2" opacity=".85"/><use href="#sat" x="150" y="48"/></svg><span class="tag">Diwata-1</span><h3>First Filipino Microsatellite</h3>
+<div class="stats"><span>~50 kg</span><span>Deployed 27 Apr 2016</span><span>Ended 2020</span></div>
+<p>Carried to the International Space Station on a Cygnus cargo flight and released from the Japanese Kibo module on 27 April 2016.</p>
+<ul><li>High Precision Telescope (HPT)</li><li>Spaceborne Multispectral Imager</li><li>Wide and Middle Field Cameras</li></ul>
+<div class="fact">Used for weather monitoring, crop and forest observation, and disaster response imagery. Its orbit lasted almost four years, far beyond the 18 months planned.</div><div class="links"><a href="https://newsbytes.ph/2020/04/07/phs-first-micro-satellite-ends-mission-after-4-years-in-space/" target="_blank" rel="noopener">Read: end of mission</a><a href="https://upd.edu.ph/whats-new-with-diwata/" target="_blank" rel="noopener">Read: UP Diliman story</a></div>
+</div>
+<div class="card">
+<svg class="art" viewBox="0 0 300 110" role="img" aria-label="Illustration of Diwata-2 with radio antenna"><rect width="300" height="110" fill="#0b1230"/><use href="#stars"/><circle cx="230" cy="190" r="110" fill="#2a9d6f"/><use href="#sat" x="100" y="55"/><path d="M100 41v-24M92 22q8-8 16 0M87 15q13-13 26 0" stroke="#ffb454" fill="none" stroke-width="2"/></svg><span class="tag">Diwata-2</span><h3>The Upgraded Successor</h3>
+<div class="stats"><span>~50 kg</span><span>Launched 29 Oct 2018</span><span>H-IIA rocket</span></div>
+<p>Launched from Tanegashima, Japan, with improved cameras and an amateur radio payload that lets ham operators connect through the satellite.</p>
+<ul><li>Multispectral imager</li><li>Wide-field and enhanced-resolution cameras</li><li>Amateur radio repeater</li></ul>
+<div class="fact">By late 2022 it had taken over 112,000 images and covered about 94% of Philippine land, orbiting near 600 km altitude.</div><div class="links"><a href="https://philsa.gov.ph/?p=3685" target="_blank" rel="noopener">View: PhilSA images and report</a><a href="https://philsa.gov.ph" target="_blank" rel="noopener">PhilSA website</a></div>
+</div>
+</div>
+</section>
+
+<section id="jp">
+<h2><span class="flag">●</span> Japan's Asteroid Explorers</h2>
+<p class="sub">JAXA's Hayabusa missions brought pieces of asteroids back to Earth.</p>
+<div class="grid">
+<div class="card">
+<svg class="art" viewBox="0 0 300 110" role="img" aria-label="Illustration of Hayabusa approaching asteroid Itokawa with ion engine glow"><rect width="300" height="110" fill="#0b1230"/><use href="#stars"/><path d="M10 55H70" stroke="#6ea8ff" stroke-width="8" stroke-linecap="round" opacity=".6"/><ellipse cx="225" cy="62" rx="48" ry="26" fill="#8a7a66"/><circle cx="215" cy="55" r="6" fill="#6d5f4d"/><circle cx="238" cy="70" r="4" fill="#6d5f4d"/><g transform="translate(100,55) scale(.8)"><use href="#sat"/></g></svg><span class="tag">Hayabusa</span><h3>First Asteroid Sample Return</h3>
+<div class="stats"><span>Launched May 2003</span><span>Target: Itokawa</span><span>Returned Jun 2010</span></div>
+<p>Reached asteroid Itokawa in 2005 using ion engines and collected about 1,500 tiny grains despite many technical troubles. Its capsule landed in Woomera, Australia, in June 2010.</p>
+<div class="fact">The first spacecraft to return material from an asteroid.</div><div class="links"><a href="https://www.isas.jaxa.jp/en/" target="_blank" rel="noopener">JAXA/ISAS missions</a></div>
+</div>
+<div class="card">
+<svg class="art" viewBox="0 0 300 110" role="img" aria-label="Illustration of Hayabusa2 sampling asteroid Ryugu"><rect width="300" height="110" fill="#0b1230"/><use href="#stars"/><polygon points="235,20 272,55 235,95 198,55" fill="#6b6257"/><polygon points="235,20 272,55 198,55" fill="#8b8173"/><g transform="translate(85,45) scale(.8)"><use href="#sat"/></g><path d="M105 58L180 72" stroke="#ffb454" stroke-width="3"/><g fill="#c9bfae"><circle cx="185" cy="68" r="1.5"/><circle cx="190" cy="74" r="1"/><circle cx="182" cy="78" r="1.3"/></g></svg><span class="tag">Hayabusa2</span><h3>Ryugu and Beyond</h3>
+<div class="stats"><span>Launched Dec 2014</span><span>Target: Ryugu</span><span>Returned Dec 2020</span></div>
+<p>Arrived at Ryugu in 2018, deployed small landers and rovers, created an artificial crater, and returned more than 5 g of carbon-rich samples. It continues on an extended mission to asteroid 1998 KY26.</p>
+<div class="fact">Ryugu samples carry water-bearing minerals and organic molecules.</div><div class="links"><a href="https://spaceflightnow.com/2019/03/06/hayabusa-2s-asteroid-touch-and-go-comes-to-life-in-dramatic-new-video/" target="_blank" rel="noopener">▶ Touchdown video</a><a href="https://www.space.com/hayabusa2-asteroid-ryugu-sampling-video.html" target="_blank" rel="noopener">▶ Sampling video</a><a href="https://www.universetoday.com/articles/watch-this-amazing-video-of-hayabusa-2-picking-up-a-sample-from-the-surface-of-ryugu" target="_blank" rel="noopener">▶ Sub-surface sample</a></div>
+</div>
+</div>
+</section>
+
+<section id="scope">
+<h2><span class="flag">●</span> Space Telescopes</h2>
+<p class="sub">Above Earth's atmosphere, telescopes see light the ground cannot.</p>
+<div class="grid">
+<div class="card"><svg class="art" viewBox="0 0 300 110" role="img" aria-label="Illustration of the Hubble Space Telescope"><rect width="300" height="110" fill="#0b1230"/><use href="#stars"/><g transform="translate(150,55)"><rect x="-55" y="-14" width="110" height="28" rx="6" fill="#c9d1e8"/><rect x="-62" y="-12" width="10" height="24" rx="2" fill="#111"/><rect x="-14" y="-46" width="22" height="32" fill="#2b57c7" stroke="#8fb4ff"/><rect x="-14" y="14" width="22" height="32" fill="#2b57c7" stroke="#8fb4ff"/></g></svg><span class="tag">Optical / UV</span><h3>Hubble</h3><div class="stats"><span>1990</span><span>2.4 m mirror</span></div><p>Low Earth orbit observatory that measured the universe's expansion and gave us deep-field images.</p><div class="links"><a href="https://hubblesite.org" target="_blank" rel="noopener">Photos &amp; videos</a></div></div>
+<div class="card"><svg class="art" viewBox="0 0 300 110" role="img" aria-label="Illustration of the James Webb Space Telescope gold mirror and sunshield"><rect width="300" height="110" fill="#0b1230"/><use href="#stars"/><polygon points="90,80 210,80 235,100 65,100" fill="#8fb4ff" opacity=".8"/><g fill="#f2c14e" stroke="#7a5a10"><use href="#hx" x="150" y="42"/><use href="#hx" x="174" y="42"/><use href="#hx" x="162" y="63"/><use href="#hx" x="138" y="63"/><use href="#hx" x="126" y="42"/><use href="#hx" x="138" y="21"/><use href="#hx" x="162" y="21"/></g></svg><span class="tag">Infrared</span><h3>James Webb</h3><div class="stats"><span>Dec 2021</span><span>6.5 m mirror</span></div><p>Sits near the Sun-Earth L2 point with a folding gold-coated mirror and a sunshield, studying early galaxies and exoplanet atmospheres.</p><div class="links"><a href="https://webb.nasa.gov" target="_blank" rel="noopener">Photos &amp; videos</a></div></div>
+<div class="card"><svg class="art" viewBox="0 0 300 110" role="img" aria-label="Illustration of the Chandra X-ray Observatory collecting X-rays"><rect width="300" height="110" fill="#0b1230"/><use href="#stars"/><path d="M10 10L75 55M5 32L72 60" stroke="#e879f9" stroke-width="2" stroke-dasharray="4 3"/><g transform="translate(160,58)"><rect x="-80" y="-9" width="160" height="18" rx="4" fill="#c9d1e8"/><rect x="-90" y="-12" width="12" height="24" fill="#555"/><rect x="-20" y="-40" width="26" height="30" fill="#2b57c7" stroke="#8fb4ff"/><rect x="-20" y="10" width="26" height="30" fill="#2b57c7" stroke="#8fb4ff"/></g></svg><span class="tag">X-ray</span><h3>Chandra</h3><div class="stats"><span>Jul 1999</span></div><p>Sees black holes, supernova remnants and hot gas in galaxy clusters.</p><div class="links"><a href="https://chandra.si.edu" target="_blank" rel="noopener">Photos &amp; videos</a></div></div>
+<div class="card"><svg class="art" viewBox="0 0 300 110" role="img" aria-label="Illustration of XRISM observing hot plasma around a black hole"><rect width="300" height="110" fill="#0b1230"/><use href="#stars"/><g fill="none" stroke="#ff9a3c"><ellipse cx="235" cy="55" rx="40" ry="14"/><ellipse cx="235" cy="55" rx="28" ry="9"/><ellipse cx="235" cy="55" rx="16" ry="5"/></g><circle cx="235" cy="55" r="4" fill="#000" stroke="#ff9a3c"/><path d="M135 55H190" stroke="#e879f9" stroke-dasharray="4 3" stroke-width="2"/><g transform="translate(85,55) scale(.8)"><use href="#sat"/></g></svg><span class="tag">X-ray · Japan</span><h3>XRISM</h3><div class="stats"><span>Sep 2023</span><span>JAXA/NASA</span></div><p>Japanese-led X-ray mission measuring the speed and makeup of cosmic hot plasma.</p><div class="links"><a href="https://xrism.isas.jaxa.jp" target="_blank" rel="noopener">Official mission site</a></div></div>
+</div>
+</section>
+
+<section id="tech">
+<h2><span class="flag">●</span> Key Technologies</h2>
+<p class="sub">Ideas that made these missions possible.</p>
+<div class="grid">
+<div class="card"><svg class="art" viewBox="0 0 300 110" role="img" aria-label="Small cube-shaped microsatellite"><rect width="300" height="110" fill="#0b1230"/><use href="#stars"/><rect x="124" y="24" width="52" height="52" rx="4" fill="#c9d1e8"/><rect x="136" y="36" width="28" height="28" fill="#2b57c7"/><text x="150" y="98" text-anchor="middle" fill="#9aa5cf" font-size="11">about 50 kg</text></svg><h3>Microsatellites</h3><p>Small ~50 kg spacecraft that cost far less than traditional satellites, letting new space nations build their own.</p></div>
+<div class="card"><svg class="art" viewBox="0 0 300 110" role="img" aria-label="Ion thruster with blue exhaust beam"><rect width="300" height="110" fill="#0b1230"/><use href="#stars"/><path d="M100 55H250" stroke="#6ea8ff" stroke-width="14" opacity=".35" stroke-linecap="round"/><path d="M100 55H220" stroke="#b9d4ff" stroke-width="5" stroke-linecap="round"/><polygon points="55,38 100,32 100,78 55,72" fill="#c9d1e8"/></svg><h3>Ion Propulsion</h3><p>Electric thrusters give gentle, extremely efficient thrust. Hayabusa used them to travel to Itokawa and back.</p></div>
+<div class="card"><svg class="art" viewBox="0 0 300 110" role="img" aria-label="Color bands representing different wavelengths"><rect width="300" height="110" fill="#0b1230"/><rect x="40" y="25" width="40" height="60" fill="#3b82f6"/><rect x="85" y="25" width="40" height="60" fill="#22c55e"/><rect x="130" y="25" width="40" height="60" fill="#ef4444"/><rect x="175" y="25" width="40" height="60" fill="#7f1d1d"/><rect x="220" y="25" width="40" height="60" fill="#4b5563"/></svg><h3>Multispectral Imaging</h3><p>Cameras capture many wavelengths to reveal plant health, water quality and clouds.</p></div>
+<div class="card"><svg class="art" viewBox="0 0 300 110" role="img" aria-label="Capsule descending under a parachute"><rect width="300" height="110" fill="#0b1230"/><use href="#stars"/><path d="M20 15Q150 -5 200 40" fill="none" stroke="#9aa5cf" stroke-dasharray="4 4"/><path d="M190 40q30-40 60 0z" fill="#ffb454"/><path d="M190 40L220 78M250 40L220 78" stroke="#fff"/><polygon points="212,78 228,78 224,94 216,94" fill="#c9d1e8"/></svg><h3>Sample-Return Capsules</h3><p>Heat-shielded capsules survive re-entry to deliver samples intact for laboratory study.</p></div>
+</div>
+</section>
+
+<section id="time">
+<h2><span class="flag">●</span> Timeline</h2>
+<div class="timeline">
+<div><b>1990</b>Hubble launched</div>
+<div><b>1999</b>Chandra launched</div>
+<div><b>2003</b>Hayabusa launched</div>
+<div><b>2010</b>Hayabusa capsule returns</div>
+<div><b>2014</b>Hayabusa2 launched</div>
+<div><b>2016</b>Diwata-1 deployed</div>
+<div><b>2018</b>Diwata-2 launched</div>
+<div><b>2020</b>Ryugu samples return</div>
+<div><b>2021</b>JWST launched</div>
+<div><b>2023</b>XRISM launched</div>
+</div>
+</section>
+
+<section id="qr">
+<h2><span class="flag">●</span> Scan to Visit This Exhibit</h2>
+<p class="sub">This QR code points to this very page, so it always matches the link you opened.</p>
+<div class="card qr">
+<div id="qrbox">Generating QR code…</div>
+<div>
+<p>Print it or show it on a screen so visitors can scan it with their phone camera.</p>
+<p id="urltxt" style="word-break:break-all;font-size:.8rem"></p>
+<button id="copy" type="button">Copy link</button>
+</div>
+</div>
+</section>
+
+</main>
+<footer>Exhibit facts based on public information from JAXA, NASA and DOST/PhilSA.</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+(function(){
+  var url=location.href.split('#')[0];
+  var box=document.getElementById('qrbox');
+  document.getElementById('urltxt').textContent=url;
+  try{
+    box.textContent='';
+    new QRCode(box,{text:url,width:200,height:200,colorDark:'#000000',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M});
+  }catch(e){box.textContent='QR unavailable. Use the link instead.'}
+  document.getElementById('copy').onclick=function(){
+    var b=this;
+    try{navigator.clipboard.writeText(url).then(function(){b.textContent='Copied!'})}catch(e){b.textContent='Copy failed'}
+  };
+})();
+</script>
+</body>
+</html>
